@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+</head>
+
+<body>
+
+    <div style="color:black;font-family: helvetica;">
+        <form action="{{ url_for('predict')}}" method="post">
+        <h1 style="color:MintCream;">Movies Recommendation</h1>
+        <h3>Select a Movie Title you like:</h3>
+        <select name="movie" id="net" required="required">
+	    {% for m in movies %}
+	    	<option>{{m}}</option>
+	    {% endfor %}
+	    </select>
+	    <h3>Type the rate:</h3>
+	    <input type="number" id="num" name="rate" min=0.5 max=10.0 value=0.5 step=0.50 required="required">
+        <br><button id="sub" type="submit ">Start</button>
+        <br>
+        </form>
+	    <br>
+	    <center><h3 style="color: #FF0000;">10 Movies You Should Watch:</h3></center>
+	    {% for text in prediction_texts %}
+	    	<h2>{{text}}</h2>
+	    {% endfor %}
+    </div>
+
+    <style>
+    	h1 {
+    		background-color: #00d22f;
+    		width: auto;
+  		    border: 3px solid powderblue;
+  		    text-align:center;
+  		    position: relative;
+            margin: auto;
+	    }
+
+	    h2 {
+    		background-color: #9cffd4;
+ 			width: auto;
+ 			padding: 30px;
+  		    border: 4px solid powderblue;
+  		    text-align:center;
+  		    position: relative;
+            margin: auto;
+	    }
+
+        body {
+            background-color: #00bfff;
+            text-align: center;
+            padding: auto;
+        }
+
+
+        #num {
+            width: auto;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            margin-top: 0.1em;
+        }
+        
+        #num:hover {
+            background-color: white;
+        }
+
+
+        #net {
+            width: auto;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            margin-top: 0.1em;
+        }
+        
+        #net:hover {
+            background-color: white;
+        }
+
+
+        #sub {
+            width: 100px;
+            height: 47px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            margin-top: 1.2em;
+        }
+        
+        #sub:hover {
+            background-color: SkyBlue;
+        }
+    </style>
+</body>
+
+</html>
