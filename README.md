@@ -1,7 +1,7 @@
 # Movies Recommendation System
 <p align="center"><img src="images/reco.png" height="500" width="800"></p>
 
-<p align="center">Fonte da imagem:<a href="https://iaexpert.academy/2017/03/17/o-que-sao-sistemas-de-recomendacao">Fonte da imagem</a></p>
+<p align="center"><a href="https://iaexpert.academy/2017/03/17/o-que-sao-sistemas-de-recomendacao">Fonte da imagem</a></p>
 Tecnologias:
 
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white) ![SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
