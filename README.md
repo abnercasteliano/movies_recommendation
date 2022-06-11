@@ -1,4 +1,4 @@
-# Movies Recommendation System
+# Sistema de Recomendação de Filmes
 <p align="center"><img src="images/reco.png" height="500" width="800"></p>
 
 <p align="center"><a href="https://iaexpert.academy/2017/03/17/o-que-sao-sistemas-de-recomendacao">Fonte da imagem</a></p>
@@ -28,7 +28,7 @@ Um sistema de recomendação também pode ser utilizado como Sales Force na atua
 
 - Data Mining (extração) com **SQL Server**
 - Manipulação e transformação dos dados com **Python** e **Jupyter Notebook**
-- Criação do modelo de **Machine Learning**
+- Criação do Sistema de Recomendação com **Machine Learning**
 - Criação do Data WebApp com **Flask** e **Heroku**
 
 ### Dados da fonte
